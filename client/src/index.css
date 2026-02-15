@@ -1,0 +1,6 @@
+@import "tailwindcss";
+@import "@fontsource/baloo-bhai-2";
+
+body{
+    font-family: 'Baloo Bhai 2';
+}
