@@ -42,8 +42,7 @@ const Hero = () => {
             </div>
 
 
-                <img src="/src/assets/buildings.png" className='hidden md:block w-80 absolute bottom-0 left-0 opacity-40' alt="" />
-                <img src="/src/assets/bg2.png" className='hidden md:block w-110 absolute bottom-0 right-0 opacity-40' alt="" />
+                
 
 
         </div>
