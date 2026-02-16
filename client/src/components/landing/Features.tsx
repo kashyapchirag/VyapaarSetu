@@ -38,8 +38,8 @@ const Features = () => {
     return (
         <div className='flex flex-col w-full gap-10'>
             <div className="sentences text-center flex flex-col gap-5">
-                <h1 className='text-[#1E3A8A] text-3xl md:text-4xl font-bold'>Powerfull features for growing businesses</h1>
-                <p className='text-gray-600 font-bold text-[1.2rem]'>Everything you need to manage digital transactions and grow your local business.</p>
+                <h1 className='text-[#1E3A8A] dark:text-[#E2E8F0] text-3xl md:text-4xl font-bold'>Powerfull features for growing businesses</h1>
+                <p className='text-gray-600 dark:text-gray-400 font-bold text-[1.2rem]'>Everything you need to manage digital transactions and grow your local business.</p>
             </div>
 
             <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-10 lg:gap-10 place-self-center">
@@ -47,16 +47,16 @@ const Features = () => {
                 {
                     features.map((ele,index)=>{
                         return(
-                            <div key={index} className='group bg-white rounded-xl min-h-50 p-5 md:p-9 flex flex-col justify-center shadow-md hover:-translate-y-0.5 transition-all duration-200 hover:shadow-xl'>
+                            <div key={index} className='group bg-white dark:bg-[#1E293B] dark:border dark:border-[#334155] rounded-xl min-h-50 p-5 md:p-9 flex flex-col justify-center shadow-md dark:shadow-none hover:-translate-y-0.5 transition-all duration-200 hover:shadow-xl'>
                                 <div className="icon w-12 h-12 flex items-center justify-center rounded-xl bg-linear-to-br from-[#1E3A8A] to-[#0EA5A4] text-white mb-5 group-hover:scale-110 transition-transform duration-300">
                                     {ele.icon}
                                 </div>
 
-                                <h1 className='text-[#1E3A8A] font-bold mb-1.5'>
+                                <h1 className='text-[#1E3A8A] dark:text-[#E2E8F0] font-bold mb-1.5'>
                                     {ele.title}
                                 </h1>
 
-                                <p className='text-gray-600'>
+                                <p className='text-gray-600 dark:text-gray-400'>
                                     {ele.desc}
                                 </p>
                             </div>

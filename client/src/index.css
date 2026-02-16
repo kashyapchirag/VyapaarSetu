@@ -1,6 +1,8 @@
 @import "tailwindcss";
 @import "@fontsource/baloo-bhai-2";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 body{
     font-family: 'Baloo Bhai 2';
 }
