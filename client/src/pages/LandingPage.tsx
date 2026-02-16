@@ -7,7 +7,7 @@ import Navbar from "../components/landing/Navbar"
 const LandingPage = () => {
     return (
         <div>
-            <div className="bg-[#F3F6FF] dark:bg-[#0F172A] transition-colors duration-300 min-h-screen w-full py-6 px-5 md:px-15 flex flex-col gap-6 md:gap-20">
+            <div className="bg-[#F3F6FF] dark:bg-[#0F172A] transition-colors duration-300 min-h-screen w-full pb-6 px-5 md:px-15 flex flex-col gap-6 md:gap-20">
                 <div className="min-h-screen relative flex flex-col">
                     <Navbar/>
                     <Hero/>

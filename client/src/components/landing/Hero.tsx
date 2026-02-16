@@ -1,6 +1,6 @@
 const Hero = () => {
     return (
-        <div className='flex flex-col md:flex-row py-10 md:py-0 gap-8 md:justify-center md:items-start relative h-[90%]'>
+        <div className='flex flex-col md:flex-row py-20 md:py-15 gap-8 md:justify-center md:items-start relative h-[90%]'>
 
             <div className="flex justify-center md:justify-between w-full md:py-18 gap-10">
                 <div className="hidden img md:flex justify-center items-center w-1/2">
