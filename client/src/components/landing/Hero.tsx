@@ -24,7 +24,7 @@ const Hero = () => {
                             />
                         </div>
 
-                        <button className="text-center bg-[#1E3A8A] text-white w-full md:w-[10rem] h-12 rounded-xl shadow-md hover:bg-[#1b2957] hover:-translate-y-0.5 transition-all duration-200  cursor-pointer">
+                        <button className="text-center bg-[#1E3A8A] text-white w-full md:w-40 h-12 rounded-xl shadow-md hover:bg-[#1b2957] hover:-translate-y-0.5 transition-all duration-200  cursor-pointer">
                             Get Started
                         </button>
                     </div>

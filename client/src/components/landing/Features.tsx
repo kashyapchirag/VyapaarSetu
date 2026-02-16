@@ -1,4 +1,3 @@
-import React from 'react'
 import { BookOpen, Bell, BarChart3, Shield, Smartphone, Users } from "lucide-react";
 
 const Features = () => {
@@ -43,12 +42,12 @@ const Features = () => {
                 <p className='text-gray-600 font-bold text-[1.2rem]'>Everything you need to manage digital transactions and grow your local business.</p>
             </div>
 
-            <div className="cards flex flex-wrap gap-7 justify-center items-center">
+            <div className="cards grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-10 md:gap-10 lg:gap-10 place-self-center">
 
                 {
                     features.map((ele,index)=>{
                         return(
-                            <div key={index} className='group bg-white rounded-xl min-h-50 p-5 md:p-9 flex flex-col justify-center md:w-100 shadow-md hover:-translate-y-0.5 transition-all duration-200'>
+                            <div key={index} className='group bg-white rounded-xl min-h-50 p-5 md:p-9 flex flex-col justify-center shadow-md hover:-translate-y-0.5 transition-all duration-200 hover:shadow-xl'>
                                 <div className="icon w-12 h-12 flex items-center justify-center rounded-xl bg-linear-to-br from-[#1E3A8A] to-[#0EA5A4] text-white mb-5 group-hover:scale-110 transition-transform duration-300">
                                     {ele.icon}
                                 </div>
