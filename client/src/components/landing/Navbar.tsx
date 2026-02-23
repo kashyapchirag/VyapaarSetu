@@ -32,11 +32,9 @@ const Navbar = () => {
 
                     <button className="px-5 flex justify-center items-center h-10 bg-white dark:bg-[#1E293B] text-gray-700 dark:text-gray-200 min-w-22 dark:border-[#334155] rounded-xl shadow-md hover:bg-[#1b2957] hover:text-white hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">Log In</button>
 
-                    <button onClick={handleTheme} className="w-10 h-10 flex items-center justify-center bg-white dark:bg-[#1E293B] dark:text-white rounded-xl shadow-md transition-all hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
+                    <button onClick={handleTheme} className="w-10 h-10 flex items-center justify-center bg-white dark:bg-[#1E293B] dark:text-white rounded-xl shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer">
                         {darkMode? <Sun size={18} /> : <Moon size={18} />}
                     </button>
-
-
 
                 </div>
             </ul>

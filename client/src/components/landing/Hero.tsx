@@ -1,4 +1,13 @@
+import { useState } from "react"
+
 const Hero = () => {
+
+    const [phone, setPhone] = useState("")
+
+    const handleContinue = () =>{
+
+    }
+
     return (
         <div className='flex flex-col md:flex-row py-20 md:py-15 gap-8 md:justify-center md:items-start relative h-[90%]'>
 
@@ -14,15 +23,23 @@ const Hero = () => {
 
                     <div className="flex flex-col md:flex-row gap-4 w-full mt-5">
                         <div className="flex justify-between px-4 items-center gap-10 w-full md:w-[20rem] bg-white dark:bg-[#1E293B] border border-gray-200 dark:border-[#334155] h-12 rounded-xl shadow-md">
-                            <span className='w-[10%] text-gray-800 dark:text-gray-200'>+91</span>
+                            <span className='w-[10%] text-gray-800 dark:text-gray-200'>+91</span> 
                             <input
+                            value={phone}
+                            onChange={(e)=>{
+                                setPhone(e.target.value.replace(/\D/g, ""))
+                            }}
+                            type="text"
+                            inputMode="numeric"
+                            pattern="[0-9]*"
+                            min={10}
+                            max={10}
                             className='w-[90%] h-full outline-none text-gray-800 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500'
-                            type="text" 
                             placeholder='Enter your phone number' 
                             />
                         </div>
 
-                        <button className="text-center bg-[#1E3A8A] text-white w-full md:w-40 h-12 rounded-xl shadow-md hover:bg-[#1b2957] hover:-translate-y-0.5 transition-all duration-200  cursor-pointer">
+                        <button  onClick={handleContinue} className="text-center bg-[#1E3A8A] text-white w-full md:w-40 h-12 rounded-xl shadow-md hover:bg-[#1b2957] hover:-translate-y-0.5 transition-all duration-200  cursor-pointer">
                             Get Started
                         </button>
                     </div>
