@@ -8,6 +8,9 @@ const AppLayout = () => {
         localStorage.getItem("theme") === "dark"
     )
 
+    const [isOpen, setIsOpen] = useState(false)
+    const [mode, setMode] = useState("")
+
     useEffect(()=>{
         if(darkMode){
             document.documentElement.classList.add("dark")
@@ -20,7 +23,7 @@ const AppLayout = () => {
 
     return (
         <div>
-            <Outlet context={{darkMode,setDarkMode}} />
+            <Outlet context={{darkMode,setDarkMode,isOpen,setIsOpen,mode,setMode}} />
             <ToastContainer
             position="top-right"
             autoClose={3000}

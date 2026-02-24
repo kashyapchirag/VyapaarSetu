@@ -6,7 +6,7 @@ const CTAsection = () => {
                 <p className='text-gray-600 dark:text-gray-400 text-2xl'>Manage Digital Bahi Khata, send payment reminders, and grow your business faster.</p>
 
                 <div className="flex gap-4">
-                    <div className="flex justify-between px-4 items-center gap-10 w-full md:w-[20rem] bg-white dark:bg-[#1E293B] border dark:border-[#334155] h-12 rounded-xl shadow-md">
+                    <div className="flex justify-between px-4 items-center gap-10 w-full md:w-[20rem] bg-white dark:bg-[#1E293B] border border-none dark:border-[#334155] h-12 rounded-xl shadow-md">
                         <span className='w-[10%] dark:text-gray-200'>+91</span>
                         <input
                         className='w-[90%] h-full outline-none dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500'

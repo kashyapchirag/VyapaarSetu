@@ -1,8 +1,8 @@
-import CTAsection from "../components/landing/CTAsection"
-import Features from "../components/landing/Features"
-import Footer from "../components/landing/Footer"
-import Hero from "../components/landing/Hero"
-import Navbar from "../components/landing/Navbar"
+import CTAsection from "./components/CTAsection"
+import Features from "./components/Features"
+import Footer from "./components/Footer"
+import Hero from "./components/Hero"
+import Navbar from "./components/Navbar"
 
 const LandingPage = () => {
     return (

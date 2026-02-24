@@ -2,7 +2,7 @@ import { Phone, Mail, MapPin, Youtube, Twitter, Facebook, Linkedin } from "lucid
 
 const Footer = () => {
     return (
-        <div className="bg-[#EAF0FF] dark:bg-[#0F172A] border-t border-t-[#dbe4ff] dark:border-t-[#334155] w-full py-17 px-5 md:px-15 text-gray-600 dark:text-gray-400 text-[0.875rem] flex flex-col gap-10">
+        <div className="bg-[#EAF0FF] dark:bg-[#0F172A] border-t border-t-[#dbe4ff] dark:border-t-[#334155] w-full py-7 sm:py-17 px-5 md:px-15 text-gray-600 dark:text-gray-400 text-[0.875rem] flex flex-col gap-10">
             
             <div className="top grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-y-10 md:gap-x-15 lg:gap-x-20">
                 <div className="">

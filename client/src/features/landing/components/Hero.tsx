@@ -1,11 +1,17 @@
 import { useState } from "react"
+import OtpModal from "../../auth/components/OtpModal"
+import { useOutletContext } from "react-router-dom"
 
 const Hero = () => {
 
     const [phone, setPhone] = useState("")
+    const {isOpen,setIsOpen,mode,setMode} = useOutletContext();
+    console.log("Modal state:", isOpen)
 
     const handleContinue = () =>{
-
+        if(phone.length<10) return
+        setMode("withPhone")
+        setIsOpen(true)
     }
 
     return (
@@ -32,8 +38,9 @@ const Hero = () => {
                             type="text"
                             inputMode="numeric"
                             pattern="[0-9]*"
-                            min={10}
-                            max={10}
+                            minLength={10}
+                            maxLength={10}
+                            required
                             className='w-[90%] h-full outline-none text-gray-800 dark:text-gray-200 placeholder:text-gray-400 dark:placeholder:text-gray-500'
                             placeholder='Enter your phone number' 
                             />
@@ -56,8 +63,7 @@ const Hero = () => {
                 <img src="/src/assets/hero-phone.png" className='min-w-[65%] max-w-[75%] h-auto drop-shadow-2xl' alt="person-with-phone" />
             </div>
 
-
-                
+            {isOpen && <OtpModal phone={phone} />}
 
 
         </div>

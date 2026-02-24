@@ -1,6 +1,6 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import AppLayout from "./layouts/AppLayout"
-import LandingPage from "./pages/LandingPage"
+import LandingPage from "./features/landing/LandingPage"
 function App() {
 
   const router = createBrowserRouter([

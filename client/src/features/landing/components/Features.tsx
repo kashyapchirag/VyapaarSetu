@@ -36,7 +36,7 @@ const Features = () => {
     ]
 
     return (
-        <div className='flex flex-col w-full gap-10'>
+        <div className='flex flex-col w-full gap-10 pb-7'>
             <div className="sentences text-center flex flex-col gap-5">
                 <h1 className='text-[#1E3A8A] dark:text-[#E2E8F0] text-3xl md:text-4xl font-bold'>Powerfull features for growing businesses</h1>
                 <p className='text-gray-600 dark:text-gray-400 font-bold text-[1.2rem]'>Everything you need to manage digital transactions and grow your local business.</p>
